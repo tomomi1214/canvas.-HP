@@ -1,0 +1,138 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Hurme Geometric Sans 1', 'Meiryo UI';
+}
+
+/*---For PC---*/
+@media screen and (min-width :1024px) {
+
+.main {
+    height: 100vH;
+    width: 100vw;
+    overflow: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+}
+
+ /* Chrome, Safari 対応 */
+.main::-webkit-scrollbar { 
+    display:none;
+}
+
+
+/* Header */
+.header {
+    height: 70px;
+    background: #d7cf7129;
+    position: relative;
+}
+.HeaderLogo{
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 5%;
+}
+.InstaLogo{
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 90%;
+}
+
+/* Wrapper */
+.split{
+    display: table;
+    width: 100%;
+    position: absolute;
+}
+.split-item{
+    display: table-cell;
+    width: 50%;
+}
+.split-left{
+    position: relative;
+    padding: 5%;
+    padding-left: 10%;
+}
+.split-right{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+}
+
+#fadein_fadeout {
+    position: fixed;
+    width: 50%;
+}
+#fadein_fadeout img{
+    margin: auto;
+    width: 80%;
+}
+
+.ImageStyle {
+    width: 80%;
+}
+.menu{
+    height: 31vH;
+}
+h2{
+    font-weight: bolder;
+    text-align: center;
+}
+table {
+    /*border-collapse: collapse;*/
+    border-collapse: separate;
+    margin: 0 auto;
+    padding: 0;
+    table-layout: fixed;
+    color: #000;
+    width: 250px;
+    font-size: 19px;
+}
+table td{
+    text-align: right;
+}
+/* Address */
+.address{
+    height: 31vH;
+}
+.content{
+    /*margin-left: 25%;*/
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+.item {
+    line-height: 0.9em;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.item a{
+    text-decoration: none;
+    color: gray;
+}
+.ForTablet, .ForMobile{
+    display: none;
+}
+
+/* Footer */
+.footer {
+    height: 45px;
+    bottom: 0;
+    /*background: #d7cf7129;*/
+    position: fixed;
+    width: 100%;
+}
+.footer p{
+    float: right;
+    font-size: 15px;
+    margin-right: 2%;
+    text-align: center;
+    margin-top: 10px;
+}
+}
